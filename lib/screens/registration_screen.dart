@@ -49,8 +49,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   email = value;
                 },
                 decoration: kTextFieldDecoration.copyWith(
-                    hintText: 'Enter Your '
-                        'Email',
+                    hintText: 'Enter Your Email',
                     hintStyle: TextStyle(color: Colors.grey)),
               ),
               SizedBox(
