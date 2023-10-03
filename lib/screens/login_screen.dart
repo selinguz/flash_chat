@@ -53,6 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 8.0,
               ),
               TextField(
+                textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.black),
                 obscureText: true,
                 onChanged: (value) {
