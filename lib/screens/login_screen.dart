@@ -30,9 +30,11 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Hero(
-                tag: 'logo',
-                child: Image.asset('assets/images/logo.png'),
+              Flexible(
+                child: Hero(
+                  tag: 'logo',
+                  child: Image.asset('assets/images/logo.png'),
+                ),
               ),
               SizedBox(
                 height: 48.0,
@@ -77,9 +79,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   try {
                     final user = await _auth.signInWithEmailAndPassword(email:
                     email, password: password);
-                    if(user != null){
+
                       Navigator.pushNamed(context, ChatScreen.id);
-                    }
+
                     setState(() {
                       showSpinner = false;
                     });
